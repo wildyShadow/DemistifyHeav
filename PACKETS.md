@@ -8,7 +8,7 @@
          2: A sort of cycle???
             explanation: each time this packet is sent, that number increases,
             when it hits 10, it is reset.
-  ## 8: Player join
+   ## 8: Player join
       42[8,["Unnamed Player",true,1,"",3,-1,0,{"1":6372018},false],50865362672]
       0: Type
       1: Player info
@@ -22,6 +22,14 @@
          7: Player appearence
          8: No idea.
       2: Frame / Unix Time at which player joined?
+   ## Recieve input
+      42[12,[4,2188,236,3]]
+      0: Packet type
+      1: Inputs info
+         0: Player id whose sent the input
+         1: The frame which the input has been sent
+         2: The sequence of the input
+         3: The input
  # SEND:
    ##1,15: 
    ## Start game? 
