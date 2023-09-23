@@ -35,12 +35,16 @@
             "playerName": the host's name?
             "peerID": peer id
             "token": Your token
-   ## 1: 21 & 71 END ROOM
+   ## 1: 21 & 71 END GAME
       42[1,[21]] is called first
       then, proceeded with 42[1,[71]], Which is a response to literally nothing.
    ## 1: 42 & 70 Change map?
-      42[1,[42,3560]] is called first, where 1: [1] is the map ID, then
-      42[1,[70,3560]] is also a responde to literally nothing
+      42[1,[42,3560]] is called first then
+      42[1,[70,3560]] is called after, it is also a response to literally nothing
+        0: Packet type
+        1: Real packet
+           0: Packet type
+           1: Map id
    ## 1: 40 Change appearence
       42[1,[40,{"1":6372018}]]
         0: the packet type
