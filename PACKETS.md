@@ -1,36 +1,38 @@
  # RECV:
-   ## 35:
-   ## Ping
-   42[35,[{"i":0,"p":175}],1=10] / 0: Type, 1: PLayers ping, 2: Ping cycle?
-  
+   ## 35: Ping
+      42[35,[{"i":0,"p":175}],1=10]
+      0: Type 
+         1: PLayers ping
+            "i": player id
+            "p": Their latency
  # SEND:
    ##1,15: 
    ## Start game? 
-   42[1,[15,[{},[["eJytlEtuhDAMhu%2BSdahihxDCVSo2rUaVuqo6zApx9zp2wrMwqHSDf8X4i%2BPY6dWbal57haoBraxqkMydlzwtVd57BKfVFy0VoAvUqMmAhnZoB90r4EAKt%2BWzeA4HLWYKRw4H%2F%2BISIIrdFCryFoY%2BKxVFkdUEtym3BA9HbEHgCMuKRZHVxC6ZbRIazFOynlsyiTkRHRNzJaA8ynZMaiF4B1xXoWIu%2Fj%2FYy92ZDVbaYgEPqVZxk4lQM2Gb12lAkLNdIMT0Y5NcOAXAsokP%2B8zlui4EF9itCwxpOkICm8PhCGOjLpX0XdjAZTriHsucz59bZgDt3wnut%2FEHUt3340a%2BUjUFbLCGebihVXKHeAEhPW3ddZL0tryr9K35OTpJgw0tzJ%2FZC7hWq88oZ39y8edt5vLbfMJjV55dh0wWeeo1C3YckFk4Otp0EK26R7LvYj%2FS%2Bv3WqaaPf8c7LFPXgaFnkGoBwCWBmGBdlQapY4B%2B6geyTmKg4pxqH7WP7V0DWBiGH8N6j3g%3D","Simple Arena 1","scrimpypoops","","2023-05-31 06:45:43",-1,null,null,null]],false]]]
+      42[1,[15,[{},[["eJytlEtuhDAMhu%2BSdahihxDCVSo2rUaVuqo6zApx9zp2wrMwqHSDf8X4i%2BPY6dWbal57haoBraxqkMydlzwtVd57BKfVFy0VoAvUqMmAhnZoB90r4EAKt%2BWzeA4HLWYKRw4H%2F%2BISIIrdFCryFoY%2BKxVFkdUEtym3BA9HbEHgCMuKRZHVxC6ZbRIazFOynlsyiTkRHRNzJaA8ynZMaiF4B1xXoWIu%2Fj%2FYy92ZDVbaYgEPqVZxk4lQM2Gb12lAkLNdIMT0Y5NcOAXAsokP%2B8zlui4EF9itCwxpOkICm8PhCGOjLpX0XdjAZTriHsucz59bZgDt3wnut%2FEHUt3340a%2BUjUFbLCGebihVXKHeAEhPW3ddZL0tryr9K35OTpJgw0tzJ%2FZC7hWq88oZ39y8edt5vLbfMJjV55dh0wWeeo1C3YckFk4Otp0EK26R7LvYj%2FS%2Bv3WqaaPf8c7LFPXgaFnkGoBwCWBmGBdlQapY4B%2B6geyTmKg4pxqH7WP7V0DWBiGH8N6j3g%3D","Simple Arena 1","scrimpypoops","","2023-05-31 06:45:43",-1,null,null,null]],false]]]
    
    ## 1: 13 Send inputs
-   42[1,[13,[5,1193,187]]] 
-      0: Huh! chaz is nesting packets... 
-      1:
-         0: Packet type 
-         1: 
-            0: Input 
-            1: frame 
-            2: sequence
+      42[1,[13,[5,1193,187]]] 
+         0: Huh! chaz is nesting packets... 
+         1:
+            0: Packet type 
+            1: 
+               0: Input 
+               1: frame 
+               2: sequence
    ## 2: Create room (Account)
-   42[2,{"i":4,"a":"8*^^86%ff^GjtudfjHg2","name":"iNeonz's Game","password":"","maxPlayers":1,"hidden":true,"playerName":"iNeonz","peerID":"","token":"my real token here","version":48,"cosmetic":{"1":15601788},"mode":"custom"}]
-      0: Packet type
-      1: Map data
-         "i": No idea
-         "a": idk
-         "name": game's name
-         "password": the password
-         "maxPlayers": max players
-         "hidden": is it hidden
-         "playerName": the host's name?
-         "peerID": peer id
-         "token": Your token
-   ## 1: 21 & 71 END ROOM?
+      42[2,{"i":4,"a":"8*^^86%ff^GjtudfjHg2","name":"iNeonz's Game","password":"","maxPlayers":1,"hidden":true,"playerName":"iNeonz","peerID":"","token":"my real token here","version":48,"cosmetic":{"1":15601788},"mode":"custom"}]
+         0: Packet type
+         1: Map data
+            "i": No idea
+            "a": idk
+            "name": game's name
+            "password": the password
+            "maxPlayers": max players
+            "hidden": is it hidden
+            "playerName": the host's name?
+            "peerID": peer id
+            "token": Your token
+   ## 1: 21 & 71 END ROOM
       42[1,[21]] is called first
       then, proceeded with 42[1,[71]], Which is a response to literally nothing.
    ## 1: 42 & 70 Change map?
