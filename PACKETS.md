@@ -1,10 +1,13 @@
  # RECV:
    ## 35: Ping
-      42[35,[{"i":0,"p":175}],1=10]
+      42[35,[{"i":0,"p":175}],1-10]
       0: Type 
          1: PLayers ping
             "i": player id
             "p": Their latency
+         2: A sort of cycle???
+            explanation: each time this packet is sent, that number increases,
+            when it hits 10, it is reset.
  # SEND:
    ##1,15: 
    ## Start game? 
