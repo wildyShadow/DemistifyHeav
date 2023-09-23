@@ -30,6 +30,24 @@
          1: The frame which the input has been sent
          2: The sequence of the input
          3: The input
+   ## Room Join
+      42[7,[1,0,1695512931394,[["iNeonz",false,1,"",0,13202349,10,{"1":7506175},false],["Unnamed Player",true,1,"",1,-1,0,{"1":6372018},false]],false,false,false,384471,""]]
+      0: Packet type
+      1: Room Info
+         0: Room players?
+         1: No idea
+         2: Room ID?
+         3: Player list
+            0: Player name
+            1: Is guest
+            2: No idea
+            3: Peer Id
+            4: No idea
+            5: no idea.
+            6: Player Level
+            7: Player appearence
+         4-6: No idea
+         7: Room's peer id?
  # SEND:
    ##1,15: 
    ## Start game? 
