@@ -1,6 +1,6 @@
  # RECV:
    ## 45: Host Change
-       ## [45, 1]
+       42[45, 1]
        0: Type
        1: New Host Id
    ## 35: Ping
