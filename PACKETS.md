@@ -35,7 +35,7 @@
       0: Packet type
       1: Room Info
          0: Your ID
-         1: No idea
+         1: Host ID
          2: Room ID?
          3: Player list
             0: Player name
