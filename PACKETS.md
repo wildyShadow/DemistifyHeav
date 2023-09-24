@@ -22,7 +22,7 @@
          7: Player appearence
          8: No idea.
       2: Frame / Unix Time at which player joined?
-   ## Recieve input
+   ## 12: Recieve input
       42[12,[4,2188,236,3]]
       0: Packet type
       1: Inputs info
@@ -30,7 +30,7 @@
          1: The frame which the input has been sent
          2: The sequence of the input
          3: The input
-   ## Room Join
+   ## 7: Room Join
       42[7,[1,0,1695512931394,[["iNeonz",false,1,"",0,13202349,10,{"1":7506175},false],["Unnamed Player",true,1,"",1,-1,0,{"1":6372018},false]],false,false,false,384471,""]]
       0: Packet type
       1: Room Info
