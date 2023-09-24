@@ -14,11 +14,11 @@
       1: Player info
          0: Player name
          1: Is guest
-         2: Player level?
+         2: No idea.
          3: Peer id?
          4: Player Id
          5: No idea.
-         6: No idea.
+         6: Player level.
          7: Player appearence
          8: No idea.
       2: Frame / Unix Time at which player joined?
@@ -42,8 +42,7 @@
             1: Is guest
             2: No idea
             3: Peer Id
-            4: No idea
-            5: no idea.
+            4-5: No idea
             6: Player Level
             7: Player appearence
          4-6: No idea
