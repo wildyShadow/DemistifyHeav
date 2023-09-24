@@ -47,6 +47,11 @@
             7: Player appearence
          4-6: No idea
          7: Room's peer id?
+  ## 41: Change appearence 
+     42[41,0,{"1":16711913}]
+        0: Packet type
+        1: Player who changed their appearence
+        2: Appearence
  # SEND:
    ##1,15: 
    ## Start game? 
