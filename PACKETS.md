@@ -47,6 +47,22 @@
             7: Player appearence
          4-6: No idea
          7: Room's peer id?
+  ## 23: Room link
+     42[23, 248901, 'eestj']
+        0: Packet type
+        1: Room Number
+        2: Room Bypass
+        Example: This packet forms the link: https://heav.io/248901eestj
+  ## 6: Map Change???
+     [6, false,["eJytlEtuhDAMhu+SdahihxDCVSo2rUaVuqo6zApx9zp2wrMwqHSDf8X4i+PY6dWbal57haoBraxqkMydlzwtVd57BKfVFy0VoAvUqMmAhnZoB90r4EAKt+WzeA4HLWYKRw4H/+ISIIrdFCryFoY+KxVFkdUEtym3BA9HbEHgCMuKRZHVxC6ZbRIazFOynlsyiTkRHRNzJaA8ynZMaiF4B1xXoWIu/j/Yy92ZDVbaYgEPqVZxk4lQM2Gb12lAkLNdIMT0Y5NcOAXAsokP+8zlui4EF9itCwxpOkICm8PhCGOjLpX0XdjAZTriHsucz59bZgDt3wnut/EHUt3340a+UjUFbLCGebihVXKHeAEhPW3ddZL0tryr9K35OTpJgw0tzJ/ZC7hWq88oZ39y8edt5vLbfMJjV55dh0wWeeo1C3YckFk4Otp0EK26R7LvYj/S+v3WqaaPf8c7LFPXgaFnkGoBwCWBmGBdlQapY4B+6geyTmKg4pxqH7WP7V0DWBiGH8N6j3g=","Simple Arena 1","scrimpypoops","","2023-05-31 06:45:43",-1]]
+     0: Packet type
+     1: Map info
+        0: Map data
+        1: Map name
+        2: Map author
+        3: Map description
+        4: The date AND time of when this map was created
+        5: No idea.
   ## 41: Change appearence 
      42[41,0,{"1":16711913}]
         0: Packet type
@@ -61,7 +77,20 @@
    ##1,15: 
    ## Start game? 
       42[1,[15,[{},[["eJytlEtuhDAMhu%2BSdahihxDCVSo2rUaVuqo6zApx9zp2wrMwqHSDf8X4i%2BPY6dWbal57haoBraxqkMydlzwtVd57BKfVFy0VoAvUqMmAhnZoB90r4EAKt%2BWzeA4HLWYKRw4H%2F%2BISIIrdFCryFoY%2BKxVFkdUEtym3BA9HbEHgCMuKRZHVxC6ZbRIazFOynlsyiTkRHRNzJaA8ynZMaiF4B1xXoWIu%2Fj%2FYy92ZDVbaYgEPqVZxk4lQM2Gb12lAkLNdIMT0Y5NcOAXAsokP%2B8zlui4EF9itCwxpOkICm8PhCGOjLpX0XdjAZTriHsucz59bZgDt3wnut%2FEHUt3340a%2BUjUFbLCGebihVXKHeAEhPW3ddZL0tryr9K35OTpJgw0tzJ%2FZC7hWq88oZ39y8edt5vLbfMJjV55dh0wWeeo1C3YckFk4Otp0EK26R7LvYj%2FS%2Bv3WqaaPf8c7LFPXgaFnkGoBwCWBmGBdlQapY4B%2B6geyTmKg4pxqH7WP7V0DWBiGH8N6j3g%3D","Simple Arena 1","scrimpypoops","","2023-05-31 06:45:43",-1,null,null,null]],false]]]
-   
+        0: Packet type
+        1: Real packet
+           0: Real packet type
+           1: Map info
+              0: No idea
+              1: Map data
+                 0: Map encoded data
+                 1: Map name
+                 2: Map author
+                 3: Map description
+                 4: Map data AND time
+                 5: No idea
+                 6-8: No idea
+             2: No idea
    ## 1: 13 Send inputs
       42[1,[13,[5,1193,187]]] 
          0: Huh! chaz is nesting packets... 
@@ -113,5 +142,9 @@
       42[1,[58]] it is the editor icon.
    ## 1: 50 Exit editor
       42[1,[50,"eJzNV81u3CAQfhfOtsUMhsF%2BlWgPTbqtVPVQdZPTat%2B9wIABe5NlpfWqOYQJkPnmj2%2FGZ%2FEq5pezQDEDDboTSswovWDFrDpxCqfkTg0RIbiDP26rD5d77KoVO97Hw%2BVw6c4C3L91XrUZkFWDHeimbulv8%2B%2B1uPo742DA0QuODjiTmOXgTADptqR0wshX3cGPb79PR3fZiPn978fxtjmU4ZOI2RyszFHsdvJ5cRltBpaLqGVtA8fN%2FWsfMlGZFFyKpmW8ceU%2BFmFGLWbxXXRiVG2uYo50Fj91VdfQnGpGbgekDJhjSxmQCkATADEWK5iE9tCAUgAZQxg9itypbm3EwZ1xpvgO74CBqCivrB1WqkEG3VT4kEvAyNbndY83kGiFngeJVQRbeKw5gMwWPdyVG%2FLX8hqWntdCNRMDl32j2f5ubzkCQSKWbAwNSwUGM4BKyVAt9ufHvRZjjJJY4JiaaVSR84dmmt8%2BZ4MKZ6bIOoFQXz2h6quVBnaU95YA80BKE4yPLC9%2B%2B6ATA94OGywZKYSofdN5ZU2Vso6Yb7pLG4jtF5a4hVC%2BVb0pB1XTNRb31uKoR0WRu3FD3ggrVm1xuSwHqsRUkduhgzkBddkmdplumCHQefS0kQKZOtTCSi0FCRAr8ktWQh3j9l%2FMamgqa3CwT5qckGJWm2un9cmjTYWJOxcmcwuqPFi0kHJWVkoJZQ2iZA3S3MTuwYD0wnbEwIRB21n566yorlpxyBVVAkSaSENKWyfO3beUEultnNA1xl7cqtKrHFJb2b2rGAIwVn7aVlR8r%2Bk7eadPDxUf7%2FT4UUBNperdZ5tDJ35514pYcFb9J4MzQEezQhCQp9Vie4zbqtrF67vp8ko118%2F2Ol3fnq5bgjbtp9ynE9geHGJCO%2FH%2BEdc3Xn%2FG%2FdPxXcxnMUbPfcczvqKBC9t%2FZrgfi1za5wvXtqdBMH66GaxPHLiUjAakocvlH6H10Io%3D"]]
+      0: Packet type
+      1: Real packet
+         0: Real Packet type
+         1: the entirety of the Map's data, encoded 
    ## 1: 30 Start Typing
       42[1,[30]] this gives you the typing icon, which is taken off after another icon is present or after you send a message.
