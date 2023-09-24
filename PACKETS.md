@@ -34,7 +34,7 @@
       42[7,[1,0,1695512931394,[["iNeonz",false,1,"",0,13202349,10,{"1":7506175},false],["Unnamed Player",true,1,"",1,-1,0,{"1":6372018},false]],false,false,false,384471,""]]
       0: Packet type
       1: Room Info
-         0: Room players?
+         0: Your ID
          1: No idea
          2: Room ID?
          3: Player list
