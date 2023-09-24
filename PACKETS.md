@@ -52,6 +52,11 @@
         0: Packet type
         1: Player who changed their appearence
         2: Appearence
+  ## 29: Chat message
+     42[29,0,"ayyy"]
+        0: Packet type
+        1: Player id
+        2: The message they sent
  # SEND:
    ##1,15: 
    ## Start game? 
