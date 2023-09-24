@@ -12,6 +12,12 @@
          2: A sort of cycle???
             explanation: each time this packet is sent, that number increases,
             when it hits 10, it is reset.
+   ## 9: Player Leave
+      42[9, 1, 7, 50867583329]
+         0: Type
+         1: Player Id whose left
+         2: New host
+         3: The time at which they left?
    ## 8: Player join
       42[8,["Unnamed Player",true,1,"",3,-1,0,{"1":6372018},false],50865362672]
       0: Type
