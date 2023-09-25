@@ -3,6 +3,12 @@
        42[45, 1]
        0: Type
        1: New Host Id
+   ## 5: Rate limit 
+      42[5,"chat_rate_limit"]
+      0: Type
+      1: Rate limit
+         "chat_rate_limit": You've been typing too fast!
+         
    ## 35: Ping
       42[35,[{"i":0,"p":175}],1-10]
       0: Type 
