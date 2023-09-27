@@ -120,6 +120,14 @@
          1: Real Packet
             0: Real Packet Type
             1: New Host ID
+   ## 1:62 Change settings
+      42[1,[62,{"3":10,"51":50}]]
+      0: Packet type
+      1: Real packet
+         0: Real packet type
+         1: Json object of the new settings
+            A setting is represented by a number from 3 to 51,
+            Where the first setting's number (Timescale) is 3 and the last (ExplodePush) is 51
    ## 1:15 Start game? 
       42[1,[15,[{},[["eJytlEtuhDAMhu%2BSdahihxDCVSo2rUaVuqo6zApx9zp2wrMwqHSDf8X4i%2BPY6dWbal57haoBraxqkMydlzwtVd57BKfVFy0VoAvUqMmAhnZoB90r4EAKt%2BWzeA4HLWYKRw4H%2F%2BISIIrdFCryFoY%2BKxVFkdUEtym3BA9HbEHgCMuKRZHVxC6ZbRIazFOynlsyiTkRHRNzJaA8ynZMaiF4B1xXoWIu%2Fj%2FYy92ZDVbaYgEPqVZxk4lQM2Gb12lAkLNdIMT0Y5NcOAXAsokP%2B8zlui4EF9itCwxpOkICm8PhCGOjLpX0XdjAZTriHsucz59bZgDt3wnut%2FEHUt3340a%2BUjUFbLCGebihVXKHeAEhPW3ddZL0tryr9K35OTpJgw0tzJ%2FZC7hWq88oZ39y8edt5vLbfMJjV55dh0wWeeo1C3YckFk4Otp0EK26R7LvYj%2FS%2Bv3WqaaPf8c7LFPXgaFnkGoBwCWBmGBdlQapY4B%2B6geyTmKg4pxqH7WP7V0DWBiGH8N6j3g%3D","Simple Arena 1","scrimpypoops","","2023-05-31 06:45:43",-1,null,null,null]],false]]]
         0: Packet type
