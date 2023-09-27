@@ -8,7 +8,31 @@
       0: Type
       1: Rate limit
          "chat_rate_limit": You've been typing too fast!
-         
+   ## 22: Game End
+      42[22]
+      0: Type
+      This packets ends the game.
+   ## 27: Start game
+      42[27,1]
+      0: Type
+      1: No idea.
+   ## 16: Game Start State
+      42[16,[{},[["eJytlEtuhDAMhu%2BSdahihxDCVSo2rUaVuqo6zApx9zp2wrMwqHSDf8X4i%2BPY6dWbal57haoBraxqkMydlzwtVd57BKfVFy0VoAvUqMmAhnZoB90r4EAKt%2BWzeA4HLWYKRw4H%2F%2BISIIrdFCryFoY%2BKxVFkdUEtym3BA9HbEHgCMuKRZHVxC6ZbRIazFOynlsyiTkRHRNzJaA8ynZMaiF4B1xXoWIu%2Fj%2FYy92ZDVbaYgEPqVZxk4lQM2Gb12lAkLNdIMT0Y5NcOAXAsokP%2B8zlui4EF9itCwxpOkICm8PhCGOjLpX0XdjAZTriHsucz59bZgDt3wnut%2FEHUt3340a%2BUjUFbLCGebihVXKHeAEhPW3ddZL0tryr9K35OTpJgw0tzJ%2FZC7hWq88oZ39y8edt5vLbfMJjV55dh0wWeeo1C3YckFk4Otp0EK26R7LvYj%2FS%2Bv3WqaaPf8c7LFPXgaFnkGoBwCWBmGBdlQapY4B%2B6geyTmKg4pxqH7WP7V0DWBiGH8N6j3g%3D","Simple Arena 1","scrimpypoops","","2023-05-31 06:45:43",-1,null,null,null]],false,1695838970864,[[0,1],[2,1]],644]]
+      0: Packet type
+      1: State info
+         0: No idea.
+         1: Map info
+            0: Map settings
+               0: Map encoded data
+               1: Map name
+               2: Map author
+               3: Map Description
+               4: Map date of release
+               5-8: No idea, Possibily contributors?
+         2: no idea
+         3: Unix time at which the game has started
+         4: No idea
+         5: No idea.
    ## 35: Ping
       42[35,[{"i":0,"p":175}],1-10]
       0: Type 
