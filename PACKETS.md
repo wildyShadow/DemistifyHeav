@@ -1,4 +1,10 @@
  # RECV:
+   ## 63: Recieve Settings 
+       42[63,{"51":1}]
+       0: Type
+       1: Json object of the new settings
+          A setting is represented by a number from 3 to 51,
+          Where the first setting's number (Timescale) is 3 and the last (ExplodePush) is 51
    ## 45: Host Change
        42[45, 1]
        0: Type
