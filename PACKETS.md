@@ -196,34 +196,51 @@
     * 42[1,[21]] is called first
       then, proceeded with 42[1,[71]], Which is a response to literally nothing.
    ## 1: 42 & 70 Change map?
-     * 42[1,[42,3560]] is called first then
-     * 42[1,[70,3560]] is called after, it is also a response to literally nothing
-        0: Packet type
-        1: Real packet
-           0: Packet type
-           1: Map id
+   * 42[1,[42,3560]] is called first then
+   * 42[1,[70,3560]] is called after
+   ### Content
+   + 0: Packet type
+   + 1: Real packet
+     - 0: Packet type
+     - 1: Map id
    ## 1: 40 Change appearence
-     * 42[1,[40,{"1":6372018}]]
-       0: the packet type
-       1: Real packet
-          0: real packet type
-          1: object
-              "1": the appearence color
+   * 42[1,[40,{"1":6372018}]]
+   ### Content
+   + 0: the packet type
+   + 1: Real packet
+     - 0: real packet type
+     - 1: object
+       - "1": the appearence color
    ## 1: 62 Change mode
-     * 42[1,[62,{}]] changes to lives mode
-     * 42[1,[62,{"9":0}]] changes to kills mode
+   * 42[1,[62,{}]] changes to lives mode
+   * 42[1,[62,{"9":0}]] changes to kills mode
    ## 1: 24 Change team
-     * 42[1,[24,0]] changes to spec
-     * 42[1,[24,1]] changes to ffa
+   * 42[1,[24,0]] changes to spec
+   * 42[1,[24,1]] changes to ffa
    ## 1: 28 Chat message
-     * 42[1,[28,"ey"]] lololol
+   * 42[1,[28,"ey"]]
+   ### Content
+   - 0: Packet type
+   + 1: Real packet
+     - 0: Real Packet type
+     - 1: The message you needa send
    ## 1: 58 Enter Editor
-     * 42[1,[58]] it is the editor icon.
+   * 42[1,[58]]
+   ### Content
+   - 0: Packet type
+   - 1: Real packet
+     - 0: Real packet type
    ## 1: 50 Exit editor
-     * 42[1,[50,"eJzNV81u3CAQfhfOtsUMhsF%2BlWgPTbqtVPVQdZPTat%2B9wIABe5NlpfWqOYQJkPnmj2%2FGZ%2FEq5pezQDEDDboTSswovWDFrDpxCqfkTg0RIbiDP26rD5d77KoVO97Hw%2BVw6c4C3L91XrUZkFWDHeimbulv8%2B%2B1uPo742DA0QuODjiTmOXgTADptqR0wshX3cGPb79PR3fZiPn978fxtjmU4ZOI2RyszFHsdvJ5cRltBpaLqGVtA8fN%2FWsfMlGZFFyKpmW8ceU%2BFmFGLWbxXXRiVG2uYo50Fj91VdfQnGpGbgekDJhjSxmQCkATADEWK5iE9tCAUgAZQxg9itypbm3EwZ1xpvgO74CBqCivrB1WqkEG3VT4kEvAyNbndY83kGiFngeJVQRbeKw5gMwWPdyVG%2FLX8hqWntdCNRMDl32j2f5ubzkCQSKWbAwNSwUGM4BKyVAt9ufHvRZjjJJY4JiaaVSR84dmmt8%2BZ4MKZ6bIOoFQXz2h6quVBnaU95YA80BKE4yPLC9%2B%2B6ATA94OGywZKYSofdN5ZU2Vso6Yb7pLG4jtF5a4hVC%2BVb0pB1XTNRb31uKoR0WRu3FD3ggrVm1xuSwHqsRUkduhgzkBddkmdplumCHQefS0kQKZOtTCSi0FCRAr8ktWQh3j9l%2FMamgqa3CwT5qckGJWm2un9cmjTYWJOxcmcwuqPFi0kHJWVkoJZQ2iZA3S3MTuwYD0wnbEwIRB21n566yorlpxyBVVAkSaSENKWyfO3beUEultnNA1xl7cqtKrHFJb2b2rGAIwVn7aVlR8r%2Bk7eadPDxUf7%2FT4UUBNperdZ5tDJ35514pYcFb9J4MzQEezQhCQp9Vie4zbqtrF67vp8ko118%2F2Ol3fnq5bgjbtp9ynE9geHGJCO%2FH%2BEdc3Xn%2FG%2FdPxXcxnMUbPfcczvqKBC9t%2FZrgfi1za5wvXtqdBMH66GaxPHLiUjAakocvlH6H10Io%3D"]]
-      0: Packet type    
-      1: Real packet
-        0: Real Packet type
-        1: the entirety of the Map's data, encoded 
+   * 42[1,[50,"eJzNV81u3CAQfhfOtsUMhsF%2BlWgPTbqtVPVQdZPTat%2B9wIABe5NlpfWqOYQJkPnmj2%2FGZ%2FEq5pezQDEDDboTSswovWDFrDpxCqfkTg0RIbiDP26rD5d77KoVO97Hw%2BVw6c4C3L91XrUZkFWDHeimbulv8%2B%2B1uPo742DA0QuODjiTmOXgTADptqR0wshX3cGPb79PR3fZiPn978fxtjmU4ZOI2RyszFHsdvJ5cRltBpaLqGVtA8fN%2FWsfMlGZFFyKpmW8ceU%2BFmFGLWbxXXRiVG2uYo50Fj91VdfQnGpGbgekDJhjSxmQCkATADEWK5iE9tCAUgAZQxg9itypbm3EwZ1xpvgO74CBqCivrB1WqkEG3VT4kEvAyNbndY83kGiFngeJVQRbeKw5gMwWPdyVG%2FLX8hqWntdCNRMDl32j2f5ubzkCQSKWbAwNSwUGM4BKyVAt9ufHvRZjjJJY4JiaaVSR84dmmt8%2BZ4MKZ6bIOoFQXz2h6quVBnaU95YA80BKE4yPLC9%2B%2B6ATA94OGywZKYSofdN5ZU2Vso6Yb7pLG4jtF5a4hVC%2BVb0pB1XTNRb31uKoR0WRu3FD3ggrVm1xuSwHqsRUkduhgzkBddkmdplumCHQefS0kQKZOtTCSi0FCRAr8ktWQh3j9l%2FMamgqa3CwT5qckGJWm2un9cmjTYWJOxcmcwuqPFi0kHJWVkoJZQ2iZA3S3MTuwYD0wnbEwIRB21n566yorlpxyBVVAkSaSENKWyfO3beUEultnNA1xl7cqtKrHFJb2b2rGAIwVn7aVlR8r%2Bk7eadPDxUf7%2FT4UUBNperdZ5tDJ35514pYcFb9J4MzQEezQhCQp9Vie4zbqtrF67vp8ko118%2F2Ol3fnq5bgjbtp9ynE9geHGJCO%2FH%2BEdc3Xn%2FG%2FdPxXcxnMUbPfcczvqKBC9t%2FZrgfi1za5wvXtqdBMH66GaxPHLiUjAakocvlH6H10Io%3D"]]
+    ### Content
+    - 0: Packet type    
+    - 1: Real packet
+      - 0: Real Packet type
+      - 1: the entirety of the Map's data, encoded 
    ## 1: 30 Start Typing
-     * 42[1,[30]] this gives you the typing icon, which is taken off after another icon is present or after you send a message.
+   * 42[1,[30]]
+   ### Content
+   - 0: Packet type
+   - 1: Real packet
+     - 0: Real packet type
+       - This packets gives you the typing icon once you start typing.
