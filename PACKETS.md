@@ -1,3 +1,11 @@
+ # TEAMS
+ + [0,1,2,3]
+   - 0 = SPEC
+   - 1 = FFA
+   - 2 = RED
+   - 3 = BLUE
+   - 4 = GREEN?
+   - 5 = YELLOW?
  # RECV:
    ## 63: Recieve Settings 
    * 42[63,{"51":1}]
@@ -192,6 +200,15 @@
       - "playerName": the host's name?
       - "peerID": peer id
       - "token": Your token
+   ## 1: 47 SWITCH PLAYER'S TEAM
+   * 42[1,[47,{"i":1,"t":0}]]
+   ### Content
+   + 0: Packet type
+   + 1: Real packet
+     - 0: Packet type
+     - 1: Change info
+       - "i": Player id
+       - "t": Desired team
    ## 1: 21 & 71 END GAME
     * 42[1,[21]] is called first
       then, proceeded with 42[1,[71]], Which is a response to literally nothing.
